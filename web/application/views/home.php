@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Courses Dekho</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+		<style>
+		.header{
+		    background: url('<?php echo base_url(); ?>assets/img/homepage-slider/slider-bg4.jpg') no-repeat fixed;
+		    background-size: cover;
+		    min-height: 650px;
+		    position: relative;
+		}
+
+		.bg-color
+		{
+		    background-color: rgba(0, 0, 0, 0.5);
+		    min-height: 650px;
+		}
+		#main-header
+		{
+		   /* padding: 20px 0; */
+		}
+		.navbar-default {
+		    background-color: transparent;
+		    border:0px;
+		}
+		.navbar-fixed-top {
+		    top: 0;
+		    border-width: 0 0 1px;
+		}
+		h2 {
+		    margin: 0;
+		    border-bottom: none;
+		}
+				.contact-form .form-control
+		{
+		    background-color: transparent;
+		    border-radius: 0px;
+		    color: #fff !important;
+		    border-color: #4285f4;
+		}
+		.form-control:focus {
+		    border-color: #4285f4;
+		    outline: 0;
+			
+		    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+		    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+		}
+		#contact h2.service-title.pad-bt15 {
+		    color: #fff;
+		}
+
+		.social-login .social-login-buttons {
+		  text-align: center;
+		      margin-bottom: -20px;
+		}
+		.social-login .social-login-buttons a {
+		  position: relative;
+		  display: inline-block;
+		  white-space: nowrap;
+		  height: 35px;
+		  line-height: 35px;
+		  padding-right: 15px;
+		      padding-left: 50px;
+		  margin: 10px 5px;
+		  color: #fff;
+		  font-size: 15px;
+		    font-weight: 400;
+		  text-align: left;
+		  -webkit-border-radius: 3px;
+		  -webkit-background-clip: padding-box;
+		  -moz-border-radius: 3px;
+		  -moz-background-clip: padding;
+		  border-radius: 3px;
+		  background-clip: padding-box;
+		  -webkit-transition: opacity .2s linear;
+		  -moz-transition: opacity .2s linear;
+		  -o-transition: opacity .2s linear;
+		  -ms-transition: opacity .2s linear;
+		  transition: opacity .2s linear;
+		  -webkit-transform: translateZ(0);
+		  -moz-transform: translateZ(0);
+		  -o-transform: translateZ(0);
+		  -ms-transform: translateZ(0);
+		  transform: translateZ(0);
+		}
+		.social-login .social-login-buttons a:hover {
+		  opacity: 0.8;
+		  text-decoration: none;
+		}
+		.social-login .social-login-buttons a:before {
+		  content: '';
+		  display: block;
+		  position: absolute;
+		  left: 10px;
+		  top: 5px;
+		  width: 24px;
+		  height: 24px;
+		  background-image: url(<?php echo base_url(); ?>assets/img/social-login.png);
+		  background-repeat: no-repeat;
+		}
+		.social-login .btn-facebook-login {
+		  padding-left: 35px;
+		  background-color: #6886bc;
+		  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNjg4NmJjIiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NjZjYTkiIHN0b3Atb3BhY2l0eT0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+		  background-image: -moz-linear-gradient(top,#6886bc 0,#466ca9 100%);
+		  background-image: -webkit-linear-gradient(top,#6886bc 0,#466ca9 100%);
+		  background-image: -o-linear-gradient(top,#6886bc 0,#466ca9 100%);
+		  background-image: linear-gradient(top,#6886bc 0,#466ca9 100%);
+		}
+		.social-login .btn-twitter-login {
+		  padding-left: 45px;
+		  background-color: #d43e33;
+		}
+		.social-login .btn-facebook-login:before {
+		  left: 10px;
+		  background-position: 0 0;
+		}
+		.social-login .btn-twitter-login:before {
+		  left: 15px;
+		  background-position: -48px 0;
+		}
+		.social-login .not-member p {
+		  font-size: 1.5em;
+		  font-weight: 600;
+		  font-style: normal;
+		  margin-top: 30px;
+		  border-top: 1px solid #CCC;
+		}
+		.cd_homeSocialLogin a {
+		    width: 100%;
+		}
+
+		.social-login .social-login-buttons a:before {
+		    border-right: 1px solid #ddd;
+		}
+		</style>
+    </head>
+    <body>
+    
+	 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="">
+
+	 
+	 
+	  <!-- Locate me Option -->
+  <div class="modal fade" id="cd_MyLocation" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Select Locality</h4>
+        </div>
+        <div class="modal-body">
+         <div class="input-group form-group" style="	margin-bottom: 25px;">
+				<span class="input-group-addon" id="sizing-addon4"><span class="glyphicon glyphicon-map-marker"></span></span>
+				<input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon4" id="confirmPass">
+			</div>
+          <div class="input-group form-group" style="	margin-bottom: 25px;">
+				<span class="input-group-addon" id="sizing-addon4"><span class="glyphicon glyphicon-map-marker"></span></span>
+				<input type="text" class="form-control" placeholder="Locality" aria-describedby="sizing-addon4" id="confirmPass">
+			</div>
+			<div class="form-group"></div>
+			
+			
+			<div class="startup_signupFormDetailBreak ">
+			<div class="startup_signupFormDetailBreakText">
+				OR
+			</div>
+		</div>
+		<div class="form-group"></div>
+			<button type="button" class="btn btn-default cd_locateMe" data-dismiss="modal">Locate Me</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	 
+	 
+	<!-- Register overlay -->
+	
+	<div class="modal fade bs-example-modal-sm" id="cd_registerModel" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+		 <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Register your Institute</h4>
+      </div>
+      <div class="modal-body">
+	  
+	  
+	  <div class="form-group">
+			<label> Institute name </label>
+			<input type="text" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		 <div class="form-group">
+			<label>Your Full Name</label>
+			<input type="text" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		 <div class="">
+			<label>Email</label>
+			<input type="email" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		<br>
+		<button type="button" class="cd_plainButton">Register </button>
+      </div>
+	  
+	  
+     
+    </div><!-- /.modal-content -->
+	  </div>
+	</div> 
+	 
+	 
+	 
+	 	<!-- Login overlay -->
+
+	<div class="modal fade bs-example-modal-sm" id="cd_loginModel" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+			 <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+	  
+		<div class="cd_loginModelInner">
+			
+        <div class="input-group form-group">
+			<label> Username </label>
+			<input type="text" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		<div class="input-group">
+			<label> Password </label>
+			<input type="password" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		<a class="cd_forgotPassword"> Forgot Password ? </a>
+		<br>
+		 <button type="button" class="cd_plainButton">Login</button>
+			     <div class="startup_signupFormDetailBreak">
+			<div class="startup_signupFormDetailBreakText">
+				OR
+			</div>
+		</div>
+		<div class="social-login cd_homeSocialLogin">
+			<div class="social-login-buttons">
+				<a href="#" class="btn-facebook-login">Login with Facebook</a>
+				<a href="#" class="btn-twitter-login">Login with Google</a>
+			</div>
+		</div>
+		</div>
+		
+		<div class="cd_loginModelInnerForgotPassword" style="display:none">
+			<div class="form-group">
+				<label>Enter your registered Email </label>
+				<input type="text" placeholder="" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="form-group">
+				<button type="button" class="cd_plainButton cd_loginModelInnerForgotPasswordSubmit">Submit</button>
+			</div>
+			
+			<div class="form-group text-center">
+				<a class="cd_loginModelInnerForgotPasswordBack" href="javascript:void(0)">Back</a>
+			</div>
+		</div>
+	  
+	  
+	  <div class="cd_loginModelInnerForgotPasswordThankYou" style="display:none">
+			<div class="form-group">
+				<label>Please check your email.<br> Didn't received mail...?   <a class="cd_loginModelInnerForgotPasswordResend" href="javascript:void(0)">Resend</a></label>
+			</div>
+			
+			
+			<div class="form-group text-right">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+			</div>
+	
+			
+			
+			
+		</div>
+		
+      </div>
+	  
+	  
+
+	  
+     
+    </div><!-- /.modal-content -->
+	  </div>
+	</div> 
+	
+	
+	
+		<!-- sign-up overlay -->
+		
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" id="cd_signupModel" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+		 <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Sign up</h4>
+      </div>
+      <div class="modal-body">
+	  
+	  <div class="cd_signupModelInner">
+		 <div class="form-group">
+			<label> Full Name </label>
+			<input type="text" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		 <div class="form-group">
+			<label>Email</label>
+			<input type="email" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+		
+		<div class="form-group">
+			<label> Contact Number </label>
+			<input type="number" class="cd_plainTextBox" placeholder="" aria-describedby="basic-addon1">
+		</div>
+
+<p class="cd_noteP">(we will send verification code to this number)</p>
+		<br>
+		<button type="button" class="cd_plainButton cd_signupModelSubmitButton">Sign Up</button>
+		 <div class="startup_signupFormDetailBreak">
+			<div class="startup_signupFormDetailBreakText">
+				OR
+			</div>
+		</div>
+		<div class="social-login cd_homeSocialLogin">
+		<div class="social-login-buttons">
+			<a href="#" class="btn-facebook-login">Sign up with Facebook</a>
+			<a href="#" class="btn-twitter-login">Sign up with Google</a>
+		</div>
+		</div>
+	  </div>
+	  
+	 
+	 
+	 <div class="cd_signupModelInnerCreatePassword" style="display:none"> 
+		<div class="input-group form-group" style="	margin-bottom: 20px;">
+				<input type="text" class="form-control" placeholder="Enter OTP" aria-describedby="sizing-addon4">
+				<span class="input-group-addon" id="sizing-addon4"><span class="glyphicon glyphicon-ok"></span></span>
+				
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+					<div class="col-xs-5 cd_noPadding text-left">
+						 <a class="cd_loginModelInnerForgotPasswordResend" href="javascript:void(0)">Resend OTP</a>
+					</div>
+					<div class="col-xs-7 cd_noPadding text-right">
+						 <a class="cd_loginModelInnerForgotPasswordResendChangeNumber" href="javascript:void(0)">Change Number</a>
+					</div>
+				</div>
+		</div>
+		
+		<hr>
+		
+		<div class="cd_loginModelInnerCreatePassword">
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="Enter Password" aria-describedby="basic-addon1" readonly>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="Re-enter Password" aria-describedby="basic-addon1" readonly>
+			</div>
+			<div class="form-group">
+				<button type="button" class="cd_plainButton cd_loginModelInnerForgotPasswordSubmit">Submit</button>
+			</div>
+		</div>
+	 </div>
+		
+      </div>
+	  
+	  
+	  
+
+	  
+	 
+	  
+    </div><!-- /.modal-content -->
+	  </div>
+	</div> 
+	 
+    <div class="loader"></div>
+    <div id="myDiv">
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+        <nav class="navbar navbar-default cd_homeFixedNav">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="<?php echo base_url(); ?>assets/img/mPurpose-logo.png" class="img-responsive cd_Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+			
+			<ul class="nav navbar-nav">
+			<li class="#"><a href="#" style="visibility:hidden">hiden</a></li>
+				<li>
+					<a href="institute-listing.html">Institute</a>
+				</li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="about-us.html">About</a></li>	
+          </ul>
+			
+              <ul class="nav navbar-nav navbar-right">
+            
+				<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pune <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:void(0)">Change</a></li>
+                 
+                </ul>
+              </li>
+			  
+                <li class=""><a href="JavaScript:void()"  data-toggle="modal" data-target="#cd_registerModel">Register your Institute</a></li>
+                <li class=""><a href="JavaScript:void()"  data-toggle="modal" data-target="#cd_signupModel">SignUP</a></li>
+                <li class=""><a href="JavaScript:void()"  data-toggle="modal" data-target="#cd_loginModel">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+        <div class="wrapper cd_homeWrapper">
+        <div class="container">
+          <div class="row_">
+            <div class="banner-info text-center">
+              
+              <h2 class="bnr-sub-title">Find. Compare. Decide</h2>
+			  <!--<h1 class="bnr-title">Tell us the training course you need  </h1>-->
+			  <div class="row">
+			  <div class="col-xs-6 col-xs-offset-3">
+				<div class="input-group">
+						  <input type="text" class="form-control cd_homeSearch" placeholder="Ex. php, Java, Autocad..." aria-describedby="basic-addon1">
+						  <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+						</div>
+			  </div>
+			  <div class="col-xs-3">
+			  </div>
+			  </div>
+			  
+			  
+			  
+			  <div class="row">
+			  <div class="col-xs-6 col-xs-offset-3">
+			   <div class="row">
+				
+				<div class="cd_homeAdvanceSearchOuter">
+				<div class="cd_homeAdvanceSearch">
+					Advance Search
+				</div>
+				</div>
+			   <div class="cd_homeSearchAdvanceTab" style="display:none;">
+					<div class="col-sm-6">
+						<select class="form-control cd_whiteBG cd_homeSelect cd_homeSelectCategory">
+							<option> Category </option>
+							<option> Category 1 </option>
+							<option> Category 2</option>
+							<option> Category 3</option>
+						</select>
+					</div>
+					
+					
+					<div class="col-sm-6">
+						<select class="form-control cd_whiteBG cd_homeSelect cd_homeSelectLocality">
+							<option> Locality </option>
+							<option> Category 1 </option>
+							<option> Category 2</option>
+							<option> Category 3</option>
+						</select>
+					</div>
+			  </div>
+			  </div>
+			  </div>
+              
+              
+            </div>
+			<div class="overlay-detail">
+                <a href="javascript:void(0)" class="page-scroll"><i class="fa fa-angle-down"></i></a>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--/ HEADER-->
+    <!---->
+	<a  name="feature"></a>
+    <section id="feature" class="section-padding">
+      <div class="container">
+        <div class="row">
+         <div class="col-md-12 text-center">
+            <h2 class="service-title pad-bt15">How it works</h2>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="<?php echo base_url(); ?>assets/img/ser02.png">
+              </div>
+              <h3 class="pad-bt15">FIND</h3>
+              <p>Look for the best training institutes offering the training course that you require.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="<?php echo base_url(); ?>assets/img/ser03.png">
+              </div>
+              <h3 class="pad-bt15">COMPARE</h3>
+              <p>Compare the details of the short listed institutes as per your need. </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="<?php echo base_url(); ?>assets/img/ser04.png">
+              </div>
+              <h3 class="pad-bt15">DECIDE</h3>
+              <p>Finalize and contact the institute that matches all your requirement to start the training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+  
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <section id="portfolio" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="service-title pad-bt15">Featured Institutes</h2>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="<?php echo base_url(); ?>assets/img/port01.jpg" class="img-responsive">
+              <figcaption>
+                  <h2>CADCAMGURU </h2>
+                  <p>8411934286</p><br>
+				  <p>#205, Madhuleela nivas, NSG Crown,Wadgoan Bk, Pune </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="<?php echo base_url(); ?>assets/img/port02.jpg" class="img-responsive">
+              <figcaption>
+                  <h2>Envision Computer Training Institute</h2>
+                   <p>8411934286</p><br>
+				  <p>#205, Madhuleela nivas, NSG Crown,Wadgoan Bk, Pune </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="<?php echo base_url(); ?>assets/img/port03.jpg" class="img-responsive">
+              <figcaption>
+                  <h2>Envision Computer Training Institute</h2>
+                   <p>8411934286</p><br>
+				  <p>#205, Madhuleela nivas, NSG Crown,Wadgoan Bk, Pune </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="<?php echo base_url(); ?>assets/img/port04.jpg" class="img-responsive">
+              <figcaption>
+                 <h2>Envision Computer Training Institute</h2>
+                   <p>8411934286</p><br>
+				  <p>#205, Madhuleela nivas, NSG Crown,Wadgoan Bk, Pune </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="<?php echo base_url(); ?>assets/img/port05.jpg" class="img-responsive">
+              <figcaption>
+                 <h2>Envision Computer Training Institute</h2>
+                   <p>8411934286</p><br>
+				  <p>#205, Madhuleela nivas, NSG Crown,Wadgoan Bk, Pune </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="<?php echo base_url(); ?>assets/img/port06.jpg" class="img-responsive">
+              <figcaption>
+                  <h2>Envision Computer Training Institute</h2>
+                   <p>8411934286</p><br>
+				  <p>#205, Madhuleela nivas, NSG Crown,Wadgoan Bk, Pune </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+    <section id="testimonial">
+      <div class="bg-testicolor">
+        <div class="container section-padding">
+        <div class="row_">
+          <div class="testimonial-item">
+            <ul class="bxslider">
+              <li>
+                <blockquote>
+                  <img src="<?php echo base_url(); ?>assets/img/swamivivekanand.png" class="img-responsive">
+                  <p>We want that education by which character is formed, strength of mind is increased, the intellect is expanded, and by which one can stand on one's own feet. </p>
+                </blockquote>
+                <small>Swami Vivekananda</small>
+              </li>
+              <li>
+                <blockquote>
+                  <img src="<?php echo base_url(); ?>assets/img/apjabdulkalam.png" class="img-responsive">
+                  <p>All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents. </p>
+                </blockquote>
+                <small>A.P.J Abdul Kalam </small>
+              </li>
+              <li>
+                <blockquote>
+                  <img src="<?php echo base_url(); ?>assets/img/stephenhawking.png" class="img-responsive">
+                  <p>Intelligence is the ability to adapt to change. </p>
+                </blockquote>
+                <small>Stephen Hawking</small>
+              </li>
+              <li>
+                <blockquote>
+                 <img src="<?php echo base_url(); ?>assets/img/mvisvesvaraya.png" class="img-responsive">
+                  <p>To give real service, you must add something which cannot be bought or measured with money.</p>
+                </blockquote>
+                <small>Sir M. Visvesvaraya</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+ 
+ <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center white">
+            <h2 class="service-title pad-bt15">Contact us</h2>
+            <p class="sub-title pad-bt15">We would love to hear from you.</p>
+            <hr class="bottom-line white-bg">
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="loction-info white">
+              <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>A99 Adam Street<br>Texas, TX 555072</p>
+              <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@baker.com</p>
+              <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+41 5787 2323</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="contact-form">
+              <form>
+                <div class="col-md-6 padding-right-zero">
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Name" type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Phone No" type="text">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" placeholder="Enter Subject" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Messages"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-submit">SEND NOW</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->

@@ -1,0 +1,531 @@
+	.cd_searchMyCourses span {
+    background-color: #4285f4;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 15px;
+    position: relative;
+    top: 8px;
+    border-radius: 8px;
+	    cursor: pointer;
+}
+.service-wrapper-row .service-image img
+{
+	max-width:100%;
+}
+.cd_searchMyCourses
+{
+	    padding-right: 10px;
+}
+
+.cd_somethingMore {
+    background-color: #4285f4;
+	color: #fff;
+	    text-align: center;
+		padding: 60px 0px;
+}
+
+.cd_somethingMore h2 {
+    color: #fff;
+	
+    border: navajowhite;
+}
+
+.cd_smileImageMain {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 30px;
+}	
+.cd_smileInner {
+    display: inline-block;
+    padding: 0px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.cd_smileOuter {
+    width: 100%;
+  
+    text-align: right;
+}
+.mainmenu {
+    margin-left: 0px !important;
+}
+.cd_navMain {
+    background: white;
+    border: 0;
+    box-shadow: none;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+{
+	/*box-shadow: 1px 2px 5px #fff;*/
+}
+.section-breadcrumbs
+{
+	padding:15px 0;
+}
+
+.footer-bottom {
+    background-color: #15224f;
+    color: #fff;
+    padding: 15px;
+}
+.section-breadcrumbs {
+    background: rgb(21, 34, 79);
+}
+div#cd_myCarousel .carousel-inner .item img {
+    width: 100%;
+	    height: 100%;
+}
+div#cd_myCarousel .carousel-inner {
+    height: 273px;
+}
+.cd_iconSetImg {
+    max-width: 70px;
+}
+input.cd_plainTextBox {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #777;
+	color: #777777;
+}
+input.cd_plainTextBox:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #4285f4;
+}
+
+.startup_signupFormDetailBreak {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 -15px 0;
+    border-top: 1px solid #bcbcbc;
+}
+p.cd_noteP {
+    font-size: 11px;
+    font-weight: bold;
+}
+a.cd_forgotPassword {
+    margin: 15px 0px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4d83f4;
+}
+.startup_signupFormDetailBreakText {
+  background: #fff;
+    display: inline;
+    position: relative;
+    top: -13px;
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+button.cd_plainButton {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #4d83f4;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.cd_iconSetInner {
+    display: inline-block;
+    text-align: center;
+	    max-width: 85px;
+}
+.cd_iconSetImg {
+    max-width: 35px;
+    margin: 0 auto;
+}
+.cd_iconSet {
+    padding-top: 30px;
+}
+.cd_instituteListCarousalSmiley {
+   
+    width: 100%;
+    max-width: 100%;
+}
+.cd_instituteListCarousalSmiley .cd_smile {
+
+    max-width: 160px;
+    margin: 15px auto 0 auto;
+}
+
+.cd_instituteListTableTitle {
+    background: #53555c;
+    color: #fff;
+    margin-top: 20px !important;
+	    margin-bottom: 0px;
+}
+.cd_reviewDetailStatus ,.cd_reviewDetailName {
+   
+    color: #000;
+    font-weight: bold;
+}
+.cd_reviewDetailStatus  {
+    padding: 5px 0;
+}
+.cd_reviewDetailStatus  span{
+    color:blue;
+}
+.cd_reviewDetailDuration {
+    color: #9E9E9E;
+}
+.cd_reviewDetailComment {
+    padding-top: 30px;
+}
+.cd_reviewInner {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.cd_listedTitle h3 {
+    padding-top: 0px;
+    display: inline-block;
+	    margin-bottom: 0px;
+	color:#000;
+}
+
+.cd_listedTitle {
+    border-bottom: 1px solid #a9adbd;
+    margin-top: 15px;
+	    padding: 10px;
+}
+.cd_listedDetails {
+    padding: 10px;
+}
+
+.cd_listedDetailsSmile {
+    padding-right: 0px;
+}
+
+
+
+.cd_listedMainOuter {
+    box-shadow: inherit;
+	 transition: 0.2s;
+	 cursor:pointer;
+	     background: #fff;
+}
+.cd_listedMainOuter:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px #000;
+	
+	   
+}
+.cd_listedSectionContainer
+{
+	    padding-top: 15px;
+    background: #e3e6e8;
+    border-radius: 5px;
+}
+
+body {	
+    background: #fff;
+}
+
+.cd_viewDetail input {
+    margin-top: 10px;
+}
+.cd_searchMyCourses input {
+    max-width: 110px;
+}
+.cd_adsTitle {
+    padding-top: 5px;
+    /*border-bottom: 1px solid rgba(83, 85, 92, 0.18);*/
+   
+    padding-bottom: 30px;
+}
+.cd_adsBox {
+    padding: 10px;
+    background: #fff;
+}
+.cd_adsBoxImg img {
+    max-height: 117px;
+    width: 100%;
+}
+.cd_adsBoxText {
+    margin-top: 5px;
+}
+ul.cd_adsList li {
+    margin-bottom: 43px;
+}
+.cd_instituteSection
+{
+	border-right: 1px solid rgba(83, 85, 92, 0.18);
+}
+.cd_productDetailPage .cd_instituteListCarousalSmiley {
+    width: initial;
+    display: inline-block;
+}
+.cd_productDetailPage .cd_smile {
+    margin-top:0px;	
+}
+.cd_productDetailPage .cd_smileInnerFirst {
+    padding-left: 0;
+}
+.cd_actionButton {
+    max-width: 150px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.cd_compareAreaContentListItemIcon {
+    display: inline;
+    float: left;
+}
+.cd_compareAreaBox {
+    width: 19.4%;
+    text-align: center;
+    border: 1px solid #a5a5a5;
+    display: inline-block;
+    border-radius: 5px;	
+	    background: #fff;
+		transition: 0.5s;
+		    position: relative;
+			    z-index: 1;
+}
+.cd_bestByCategory
+{
+	transform:scale(1.1);
+	    z-index: 2;
+}
+.cd_compareAction {
+    font-size: 14px;
+    font-weight: bold;
+}
+.cd_compareAreaTitle {
+    background: linear-gradient(#343f50, #6783b3);
+    text-align: center;
+	    padding: 15px;
+		    border-radius: 5px 5px 0 0;
+}
+.cd_compareAreaBoxPrice {
+    background: linear-gradient(#5bc0de, #1c5465);
+}
+.cd_compareAreaTitleHead {
+    /* width: 100%;
+    height: 50px;
+    background: #4285f4; */
+}
+.cd_compareAreaTitleInner {
+    color: #fff;
+	    font-size: 25px;
+}
+.cd_compareAreaFooter {
+    padding: 10px;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+.cd_compareAreaFooter input.form-control.btn-primary {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cd_compareArea {
+    background: #e3e6e8;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+	    text-align: center;
+}
+.cd_compareAreaContentListItemContent {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    display: inline-block;
+}
+.cd_compareAreaContentListItemBox {
+    position: relative;
+}
+.cd_compareAreaContentListItemIcon {
+    position: absolute;
+    left: 0;
+	    top: 2px;
+}
+.cd_compareAreaContent {
+    padding: 0 15px;
+}
+
+ul.cd_compareAreaContentList li {
+    border-bottom: 1px dotted #15224f;
+}
+.cd_compareAreaBoxPriceInner {
+
+}
+.cd_compareAreaBoxPriceInner {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    padding: 40px 0 50px;
+}
+.cd_compareAreaBoxPrice {
+    position: relative;
+}
+.cd_bottomCurve {
+    width: 100%;
+    height: 90px;
+    background-image: url('../img/BottomCurve.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 20px;
+}
+.cd_tellUsForm {
+    border:1px solid #3b3c41;
+    padding: 10px 15px;
+    background: #f2f7fe;
+    border-radius: 5px;
+}
+.cd_tellUsFormSubmit
+{
+	background-color:#3b3c41;
+	color:#fff;
+	
+}
+#cd_MyLocation .modal-header
+{
+	background:#d9534f;
+	color:#fff;
+}
+#cd_MyLocation .modal-content
+{
+	border-radius:0px;
+}
+#cd_MyLocation .modal-header h4
+{
+	background:#d9534f;
+	color:#fff;
+}
+.cd_locateMe {
+    width: 100%;
+    background: #000;
+    color: #eeeeee;
+}
+.cd_locateMeGroup
+{
+	width: 100%;
+}
+.cd_locateMeSelected  {
+    background: #5bc0de;
+    width: 100%;
+    max-width: 230px;
+	border:1px solid #5bc0de;
+}
+.cd_locateMeSelected:hover , .cd_locateMeSelected:focus
+{
+	background: #5bc0de;
+	border:1px solid #5bc0de;
+	color: #fff;
+}
+.in-press a:after
+{
+	background-image:none;
+}
+.in-press a:before
+{
+	content:none;
+}
+.in-press a {
+    text-align: justify;
+}
+.cd_locateMeBtn
+{
+	background: #5bc0de;
+}
+
+
+.cd_headerProfileOuter {
+    text-align: center;
+    padding: 10px;
+}
+
+.cd_actionButtonActionArea {
+    width: 100%;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background: white;
+    transition: 0.5s;
+    border: 1px solid;
+	    overflow: hidden;	
+}
+.cd_slideUpActiveArea{
+	height: 100%;
+}
+.cd_actionButtonActionArea .cd_tellUsForm {
+    background: #fff;
+	    border: none;
+}
+.cd_actionButtonActionArea h2 {
+    margin-bottom: 0;
+}
+.cd_arrange_submit {
+    margin-top: 50px;
+}
+.cd_slideUpActiveArea .cd_tellUsFormSubmit {
+    background-color: #5bc0de;
+}
+
+
+.cd_actionButtonActionArea .form-group {
+    margin-bottom: 10px;
+}
+
+.cd_squareModel {
+    border-radius: 0;
+}
+.cd_squareModelButton .form-control {
+    border-radius: 0;
+}
+.cd_noPadding {
+    padding: 0 !important;
+}
+.cd_smile {
+    min-width: 160px;
+}
+
+@media (max-width: 768px) {
+ .cd_searchMyCourses
+{
+	padding-left:15px;
+}
+.cd_listedDetailsSmile {
+    padding-right: 15px;
+}
+.cd_listedTitle {
+    text-align: center;
+}
+.cd_listedDetails {
+    text-align: center;
+}
+.cd_smileOuter {
+    text-align: center;
+    margin-top: 10px;
+}
+ul.cd_compareAreaContentList li {
+    display: inline-block;
+    border: 1px dotted #15224f;
+    padding: 5px 20px;
+	width: 49%;
+    margin: 2px 0;
+}
+.cd_compareAreaBox
+{
+	width:100%;
+}
+}
+
+
+
+.cd_compareAreaContentListItemIcon {
+    display: none;
+}

@@ -1,0 +1,23 @@
+tbl_location
+	-Index file location
+	Keep it in session
+
+
+Search
+	
+
+Arrange a callback
+	-tbl_leads
+	status_type
+	tbl_status
+
+
+
+Course Details on Profile.
+	
+
+Login And Signup
+	tbl_user
+	student_id = three char from name, and 3 random integers.
+	Check if id is not in DB
+
