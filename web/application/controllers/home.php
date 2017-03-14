@@ -31,6 +31,6 @@ class home extends CI_Controller {
 		$this->load->view('home');
 		$this->load->view('footer');
 		$this->load->view('footer_scripts');
-		$this->load->view('home_script');
+		//$this->load->view('home_script');
 	}
 }
