@@ -21,3 +21,46 @@ Login And Signup
 	student_id = three char from name, and 3 random integers.
 	Check if id is not in DB
 
+
+https://www.youtube.com/watch?v=yZ1eDTXHakg
+
+
+Sign up
+	Entry in tbl_users
+	Student Id will be null
+
+Facebook and google
+			store info in new table
+			insert in tbl_user with null student_id
+
+
+	Old user
+		check tbl_user for email id, user is presnt and student id is associated then show those details
+		If tbl_user does not have email id, Enter data in new table and make him login
+
+
+
+
+
+
+To check :
+	Social login update and view
+	Reciept
+
+Recently Viewed
+	if Logedin
+	all institute recently checked
+
+Listing Institute.
+
+
+
+
+
+
+
+
+
+
+
+

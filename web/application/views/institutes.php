@@ -33,16 +33,26 @@
 						
 						<select class="form-control" >
 							<option>Category</option>
-							<option>mahesh</option>
-							<option>nnitin</option>
+							<?php
+	                            foreach ($categories as $key => $category) {
+	                        ?>
+	                            <option value="<?=$category['id']?>" ><?=$category['name']?></option>
+	                        <?php
+	                            }
+	                        ?>
 						</select>
 					</div>
 					
 					<div class="col-sm-3">
 						<select class="form-control" >
 							<option>Location</option>
-							<option>mahesh</option>
-							<option>nnitin</option>
+							<?php
+	                            foreach ($locations as $key => $location) {
+	                        ?>
+	                            <option value="<?=$location['id']?>" ><?=$location['name']?></option>
+	                        <?php
+	                            }
+	                        ?>
 						</select>
 					</div>
 					

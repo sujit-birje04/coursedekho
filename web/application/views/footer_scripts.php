@@ -10,8 +10,11 @@
         <script src="<?php echo base_url(); ?>assets/js/jquery.bxslider.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/main-menu.js"></script>
     	<script src="<?php echo base_url(); ?>assets/js/template.js"></script>
-    	<script src="<?php echo base_url(); ?>assets/js/script.js"></script>
+        <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
+        <script src="<?php echo base_url(); ?>assets/js/facebook.js"></script>
+        <script src="https://apis.google.com/js/client:platform.js" async defer></script>
 
+        <script src="<?php echo base_url(); ?>assets/js/google.js"></script>
 
 
           <?php

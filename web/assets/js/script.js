@@ -211,10 +211,52 @@ $(document).ready(function(){
 	
 	
 	$('.cd_loginModelInnerForgotPasswordSubmit').click(function(){
+		
 		$('.cd_loginModelInnerForgotPassword').slideUp(250,function(){
 			$('.cd_loginModelInnerForgotPasswordThankYou').slideDown();
 		})
 	})
+
+
+	$('.cd_loginModelBTN').click(function(){
+		
+		/*
+		$('.cd_loginModelInnerForgotPassword').slideUp(250,function(){
+			$('.cd_loginModelInnerForgotPasswordThankYou').slideDown();
+		})
+		*/
+		var frm_id = $(this).attr("frm_id");
+		var call_link = $(this).attr("call_link");
+		login(frm_id, call_link);
+	})
+
+	
+
+	$('.cd_logoutModelBTN').click(function(){
+		var call_link = $(this).attr("call_link");
+		performLink(call_link);
+		//googleLogout();
+		//fbLogout();
+	})
+
+	$('.frm_submit').click(function(){
+		var frm_id = $(this).attr("frm_id");
+		var call_link = $(this).attr("call_link");
+		submitForm(frm_id, call_link);
+	})
+
+	$('.btn-facebook-login').click(function(){
+		fbLogin();
+	})
+
+	$('.btn-google-login').click(function(){
+		googleLogin();
+	})
+
+
+	
+
+	
 	
 	$('.cd_loginModelInnerForgotPasswordResend').click(function(){
 		$('.cd_loginModelInnerForgotPasswordThankYou').slideUp(250,function(){
@@ -235,8 +277,76 @@ $(document).ready(function(){
 		})
 	})
 	
+	$('.cd_loginModelInnerForgotPasswordResendChangeNumber').click(function(){
+		
+	})
+
+	function login(frm_id, call_link){
+	    var form = $('#'+frm_id);
+	    $.ajax({
+	      type: "POST",
+	      url: call_link,
+	      data: form.serialize(),
+	      success: function( response ) {
+	        var outArr = JSON.parse(response);
+	        if(outArr.isUserLoggedIn){
+	        	console.log("success");
+	        	location.reload();
+	        } else {
+	        	console.log("Error");
+
+	        }
+	      },
+	      error: function(response) {
+	      	alert("Error");	
+	      }
+	    });
+	}
+
+	
+	function submitForm(frm_id, call_link){
+	    var form = $('#'+frm_id);
+	    $.ajax({
+	      type: "POST",
+	      url: call_link,
+	      data: form.serialize(),
+	      success: function( response ) {
+	        var outArr = JSON.parse(response);
+	        if(outArr.status){
+	        	console.log("success");
+	        	location.reload();
+	        } else {
+	        	console.log("Error");
+
+	        }
+	      },
+	      error: function(response) {
+	      	alert("Error");	
+	      }
+	    });
+	}
 	
 	
+	function performLink(call_link){
+	    $.ajax({
+	      type: "POST",
+	      url: call_link,
+	      success: function( response ) {
+	        var outArr = JSON.parse(response);
+	        if(outArr.status){
+	        	console.log("success");
+	        	location.reload();
+	        } else {
+	        	alert("Error ON LINK");
+
+	        }
+	      },
+	      error: function(response) {
+	      	alert("Error");	
+	      }
+	    });
+	}
+
 	
 	
 })

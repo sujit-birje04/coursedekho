@@ -10,15 +10,16 @@
         <title>Courses Dekho</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <meta name="google-signin-client_id" content="397961837685-2eil1uvp6gh8pni2j3m0cikmhpj3eq3t.apps.googleusercontent.com">
+
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/icomoon-social.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/leaflet.css" />
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/font-awesome.min.css">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/homePageOnly.css">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/cd_style.css">
-
-
+    		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/font-awesome.min.css">
+    		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+    		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/homePageOnly.css">
+    		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/cd_style.css">
+        
           <?php
             if($this->router->fetch_class() == 'home'){
           ?>
@@ -115,7 +116,6 @@
                   top: 5px;
                   width: 24px;
                   height: 24px;
-                  background-image: url(<?php echo base_url(); ?>assets/img/social-login.png);
                   background-repeat: no-repeat;
                 }
                 .social-login .btn-facebook-login {

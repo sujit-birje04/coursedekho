@@ -5,7 +5,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div class="copyright">
 					<a href="aboutus">About </a> |
-					<a href="policy.html">Privacy Policy</a> |
+					<a href="policy">Privacy Policy</a> |
 					<a href="terms"> Terms of use</a> |
 					<a href="contactus">Contact</a>
 				</div>
